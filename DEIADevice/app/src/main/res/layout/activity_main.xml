@@ -1,0 +1,151 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/system_neutral1_100"
+tools:context=".MainActivity"
+tools:ignore="NewApi">
+
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="1015dp"
+    android:layout_height="275dp"
+    android:contentDescription="layout_teal_principal"
+    android:src="@mipmap/imgtp"
+    app:layout_constraintBottom_toTopOf="@+id/textView3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    tools:ignore="HardcodedText,VisualLintBounds,ImageContrastCheck" />
+
+<TextView
+    android:id="@+id/txtNivelAgua"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:text="Nível de água:"
+    android:textColor="#FF018786"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.298"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.778"
+    tools:ignore="HardcodedText,TextContrastCheck" />
+
+<TextView
+    android:id="@+id/txtNA"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Médio"
+    android:textAllCaps="true"
+    android:textColor="@color/white"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.094"
+    app:layout_constraintStart_toEndOf="@+id/txtNivelAgua"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.801"
+    tools:ignore="HardcodedText" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Configurações do dispositivo"
+    android:textColor="@color/teal_700"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.494"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.43"
+    tools:ignore="HardcodedText" />
+
+<Switch
+    android:id="@+id/switch2"
+    android:layout_width="290dp"
+    android:layout_height="55dp"
+    android:text="Luz de emergência"
+    android:textColor="@color/teal_700"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/switch1"
+    app:layout_constraintVertical_bias="0.239"
+    tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+<Switch
+    android:id="@+id/switch1"
+    android:layout_width="290dp"
+    android:layout_height="55dp"
+    android:layout_marginTop="36dp"
+    android:text="Comporta estoque"
+    android:textColor="@color/teal_700"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView3"
+    app:layout_constraintVertical_bias="0.041"
+    tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+<Switch
+    android:id="@+id/switch3"
+    android:layout_width="290dp"
+    android:layout_height="55dp"
+    android:layout_marginBottom="56dp"
+    android:text="Sirene de emergência"
+    android:textColor="@color/teal_700"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/switch2"
+    app:layout_constraintVertical_bias="0.879"
+    tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="48dp"
+    android:layout_height="51dp"
+    app:layout_constraintBottom_toTopOf="@+id/txtNivelAgua"
+    app:layout_constraintEnd_toStartOf="@+id/txtInundacao"
+    app:layout_constraintHorizontal_bias="0.848"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.503"
+    app:srcCompat="@android:drawable/stat_sys_warning"
+    tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtInundacao"
+        android:layout_width="203dp"
+        android:layout_height="50dp"
+        android:text="INUNDAÇÃO"
+        android:textColor="@color/design_default_color_surface"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNivelAgua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
