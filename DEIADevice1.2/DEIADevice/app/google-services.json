@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118073323009",
+    "project_id": "deia-device-964f8",
+    "storage_bucket": "deia-device-964f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118073323009:android:b915aac6f5cb8894281a00",
+        "android_client_info": {
+          "package_name": "com.example.deiadevice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118073323009-85n6ifpume9r0cv746ldqt7qpga23u6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ51ugW42XdR-jJ6OAJhYTPLcjsABbalw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118073323009-85n6ifpume9r0cv746ldqt7qpga23u6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
